@@ -1,3 +1,4 @@
+import "./sass/app.css";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Missions from "./components/Missions";
 import NavBar from "./components/NavBar";
