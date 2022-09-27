@@ -1,11 +1,19 @@
-import React from "react";
+import { useEffect } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { fetchdata } from "../redux/Mission/Mission";
+
 
 const Missions = () => {
+const dispatch =useDispatch();
+
+useEffect(() => {
+  dispatch(fetchdata());
+});
+
+
   return (
     <div>
-      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae iusto
-      dolorem vitae architecto amet, dolores eum id unde magnam quidem molestias
-      explicabo sint quia hic deserunt necessitatibus inventore similique velit.
+     
     </div>
   );
 };
