@@ -14,6 +14,7 @@ const initialState = {
 export const fetchRockets = createAsyncThunk(FETCH_ROCKETS, async () => {
   try {
     const response = await axios.get(ROCKET_ENDPOINT);
+    console.log("the fetched response ", response.data);
     return response.data;
   } catch (error) {
     return error.message;
