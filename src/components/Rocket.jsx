@@ -4,7 +4,7 @@ const Rocket = (prop) => {
   const { name, description, imageUrl, isReserved } = prop;
   return (
     <div className="rocket">
-      <img src={imageUrl} alt="rocket" />
+      <img src={imageUrl} alt={`${name} rocket`} />
 
       <div className="rocket-text">
         <h2 className="rocket-name">{name}</h2>
