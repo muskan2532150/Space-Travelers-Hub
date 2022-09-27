@@ -3,6 +3,6 @@ import  MissionSliceReducer  from "./Mission/Mission";
 
 export default configureStore ({
     reducer: {
-     Mission:MissionSliceReducer,
+     mission:MissionSliceReducer,
     },
 });
