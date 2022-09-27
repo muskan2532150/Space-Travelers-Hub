@@ -1,7 +1,7 @@
 import React from "react";
 
 const Rocket = (prop) => {
-  const { name, description, imageUrl, isReserved } = prop;
+  const { name, description, imageUrl, reserved } = prop;
   return (
     <div className="rocket">
       <img src={imageUrl} alt={`${name} rocket`} />
@@ -9,11 +9,11 @@ const Rocket = (prop) => {
       <div className="rocket-text">
         <h2 className="rocket-name">{name}</h2>
         <p className="rocket-description">
-          {isReserved && <button>Reserved</button>}
+          {reserved && <button>Reserved</button>}
           {description}
         </p>
 
-        {isReserved ? (
+        {reserved ? (
           <button className="cancel-reservations">Cancel Reservations</button>
         ) : (
           <button className="rocket-reserve">Reserve Rocket</button>
