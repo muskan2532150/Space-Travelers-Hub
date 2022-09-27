@@ -16,6 +16,7 @@ const Rockets = () => {
         description={description}
         imageUrl={flickr_images[0]}
         key={id}
+        isReserved={false}
       />
     );
   });

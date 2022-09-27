@@ -16,7 +16,7 @@ const Rocket = (prop) => {
         {isReserved ? (
           <button className="cancel-reservations">Cancel Reservations</button>
         ) : (
-          <button className="rocket-reserve"></button>
+          <button className="rocket-reserve">Reserve Rocket</button>
         )}
       </div>
     </div>
