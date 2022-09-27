@@ -34,16 +34,13 @@ export function fetchdata() {
       const res = await fetch(`${URL}`);
       const data = await res.json();
       const array = [];
-      Object.entries(data).forEach(([key,value])=>{
-        console.log(key,value.mission_name);
-        array[key]={
-          mission_name,
-          mission_id,
-          description
-        }
-
+      Object.entries(data).forEach(([,value])=>array.push({
+          mission_name:value.mission_name,
+          mission_id:value.mission_id,
+          description:value.description
       })
-      dispatch(getdata(data));
+      );
+      dispatch(getdata(array));
       dispatch(setStatus(STATUSES.IDLE));
     } catch (error) {
       dispatch(setStatus(STATUSES.ERROR));
