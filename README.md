@@ -1,7 +1,7 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# BookStore
-The Bookstore is a website similar to the "Awesome Books" website built in the previous module. You will create an MVP version of it that allows you to: Display a list of books. Add a book. Remove a selected book.
+# Space-Travelers-Hub
+Build a web application for a company that provides commercial and scientific space travel services. The application will allow users to book rockets and join selected space missions.
 
 # Live Demo
 [Live Demo]() coming soon
@@ -11,6 +11,10 @@ The Bookstore is a website similar to the "Awesome Books" website built in the p
 - CSS3
 - ES6
 - React
+- Vite
+- Redux
+- React-Jest 
+- Api
 
 ## Project Setup
 To get a local copy up and running follow these simple example steps.
@@ -39,11 +43,21 @@ npm start
 
 ## Authors
 
-👤 **Muskan Gupta**
+### 👤 Author 1
+
+#### **Muskan Gupta**
 
 - GitHub: [@github](https://github.com/muskan2532150)
 - Twitter: [@twitter](muskan2532150)
 - Linkedin:[Username](https://www.linkedin.com/in/muskan-gupta-869165225/)
+
+### 👤 Author 2
+
+#### 👤 **Kibirige John**
+
+- Github: [John-Kibrige](https://github.com/John-Kibirige)
+- Twitter: [kibirigejohn005](https://twitter.com/kibirigejohn005)
+- LinkedIn: [Kibirige John](https://www.linkedin.com/in/kibirige-john-64160520a/trk=public_profile_samename-profile_profile-result-card_result-card_full-click&original_referer=https%3A%2F%2Fwww%2Egoogle%2Ecom%2F&originalSubdomain=ug)
 
 
 ## 🤝 Contributing
@@ -55,8 +69,8 @@ Contributions, issues, and feature requests are welcome!
 Give a ⭐️ if you like this project!
 
 ## Acknowledgments
-- [BookStore](https://github.com/microverseinc/curriculum-react-redux/blob/main/bookstore/sneak_peek_v2_0.md)
-- Zeplin project 
+- [Space-Travelers-Hub](https://github.com/microverseinc/curriculum-react-redux/blob/main/group-project/project_space_travelers_hub.md)
+
 
 ## 📝 License
 
