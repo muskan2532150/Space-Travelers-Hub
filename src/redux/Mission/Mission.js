@@ -1,3 +1,4 @@
+/* eslint no-param-reassign: "error" */
 import { createSlice } from '@reduxjs/toolkit';
 
 const URL = 'https://api.spacexdata.com/v3/missions';
@@ -17,12 +18,12 @@ export const MissionSlice = createSlice({
   reducers: {
     getdata: (state, action) => { state.data = action.payload; },
     setStatus: (state, action) => { state.status = action.payload; },
-    memberChange: (state, action) => { state.data = state.data.map(mission => { if (mission.mission_id !== action.payload) return mission;  return {...mission,member:!mission.member}}) },
-    missionChange: (state, action) => { state.data = state.data.map(mission => { if (mission.mission_id !== action.payload) return mission;  return {...mission,mission:!mission.mission}}) },
+    missionChange: (state, action) => { state.data = state.data.map((mission) => { if (mission.mission_id !== action.payload) return mission; return { ...mission, mission: !mission.mission }; }); },
   },
 });
 
-export const { getdata, setStatus, memberChange, missionChange } = MissionSlice.actions;
+export const {
+  getdata, setStatus, missionChange} = MissionSlice.actions;
 
 export default MissionSlice.reducer;
 
@@ -39,10 +40,8 @@ export function fetchdata() {
         mission_name: value.mission_name,
         mission_id: value.mission_id,
         description: value.description,
-        member: false,
-        mission: false
-      })
-      );
+        mission: false,
+      }));
       dispatch(getdata(array));
       dispatch(setStatus(STATUSES.IDLE));
     } catch (error) {
