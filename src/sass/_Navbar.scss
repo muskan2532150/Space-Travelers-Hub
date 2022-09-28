@@ -1,5 +1,7 @@
 .header {
   padding: 16px 30px;
+  border-bottom: thin solid;
+  margin-inline: 19px;
 
   .nav-bar {
     display: flex;
@@ -17,9 +19,19 @@
     }
 
     .nav-links {
+      display: flex;
+
       a {
+        display: block;
+        color: #0e34ff;
+
         &:not(:last-of-type) {
           margin-right: 16px;
+        }
+
+        &:last-of-type {
+          border-left: thin solid black;
+          padding-left: 18px;
         }
       }
     }
