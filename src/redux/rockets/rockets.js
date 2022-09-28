@@ -14,7 +14,6 @@ const initialState = {
 export const fetchRockets = createAsyncThunk(FETCH_ROCKETS, async () => {
   try {
     const response = await axios.get(ROCKET_ENDPOINT);
-    console.log("the fetched response ", response.data);
     return response.data;
   } catch (error) {
     return error.message;
@@ -25,14 +24,26 @@ const rocketsSlice = createSlice({
   name: "rockets",
   initialState,
   reducers: {
-    reserve: (state, action) => {
+    bookRocket: (state, action) => {
       state.rockets = state.rockets.map((rocket) => {
-        if (rocket.id === action.payload.id) {
+        if (rocket["id"] === action.payload) {
           return {
             ...rocket,
             reserved: true,
           };
         }
+        return rocket;
+      });
+    },
+    cancelBooking: (state, action) => {
+      state.rockets = state.rockets.map((rocket) => {
+        if (rocket["id"] === action.payload) {
+          return {
+            ...rocket,
+            reserved: false,
+          };
+        }
+        return rocket;
       });
     },
   },
@@ -52,4 +63,4 @@ const rocketsSlice = createSlice({
 });
 
 export default rocketsSlice;
-export const { reserve } = rocketsSlice.actions;
+export const { bookRocket, cancelBooking } = rocketsSlice.actions;
