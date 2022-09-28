@@ -1,7 +1,12 @@
 import React from "react";
+import { useDispatch } from "react-redux";
+import { bookRocket, cancelBooking } from "../redux/rockets/rockets";
 
 const Rocket = (prop) => {
-  const { name, description, imageUrl, reserved } = prop;
+  const { name, description, imageUrl, reserved, id } = prop;
+
+  const dispatch = useDispatch();
+
   return (
     <div className="rocket">
       <img src={imageUrl} alt={`${name} rocket`} />
@@ -14,9 +19,21 @@ const Rocket = (prop) => {
         </p>
 
         {reserved ? (
-          <button className="cancel-reservations">Cancel Reservations</button>
+          <button
+            className="cancel-reservations"
+            onClick={() => {
+              dispatch(cancelBooking(id));
+            }}>
+            Cancel Reservations
+          </button>
         ) : (
-          <button className="rocket-reserve">Reserve Rocket</button>
+          <button
+            className="rocket-reserve"
+            onClick={() => {
+              dispatch(bookRocket(id));
+            }}>
+            Reserve Rocket
+          </button>
         )}
       </div>
     </div>
