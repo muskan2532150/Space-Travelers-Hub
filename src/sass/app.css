@@ -190,4 +190,26 @@ a {
 .activemission {
   color: darkred;
   border-color: darkred;
+}
+
+.profile {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 58px;
+  padding-inline: 50px;
+  margin-top: 17px;
+}
+.profile h2 {
+  margin-bottom: 14px;
+}
+.profile li {
+  list-style-type: none;
+  border: var(--thin-border);
+  padding: 10px 16px 24px;
+}
+.profile li:not(:last-of-type) {
+  border-bottom: none;
+}
+.profile ul {
+  padding: 0;
 }/*# sourceMappingURL=app.css.map */
