@@ -7,7 +7,7 @@ const STATUSES = Object.freeze({
   IDLE: 'idle',
   ERROR: 'error',
   LOADING: 'loading',
-  SUCCESS:'success',
+  SUCCESS: 'success',
 });
 
 export const MissionSlice = createSlice({
