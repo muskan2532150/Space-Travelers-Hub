@@ -40,11 +40,11 @@ console.log(rocketElements.props.children.length,missionElements.props.children.
     <div className="profile">
       <div className="profile-missions">
         <h2 className="profile-rocket-missions">My Missions</h2>
-        {rocketElements.props.children.length ? missionElements :noMission }
+        {missionElements.props.children.length ? missionElements : noMission }
       </div>
       <div className="profile-rockets">
         <h2 className="profile-rocket-header">My Rockets</h2>
-        {missionElements.props.children.length ? rocketElements : noRocket}
+        {rocketElements.props.children.length ? rocketElements : noRocket}
       </div>
     </div>
   );
