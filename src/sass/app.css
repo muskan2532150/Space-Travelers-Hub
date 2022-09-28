@@ -73,7 +73,6 @@ a {
 .rocket img {
   margin-right: 12px;
   height: 165px;
-  width: 200px;
   min-width: 200px;
 }
 .rocket-reserve {
@@ -133,12 +132,18 @@ a {
   grid-area: empty;
 }
 
+.common, .mission > div, .mission p, .mission h3 {
+  padding: 5px 8px;
+  border: none;
+  border-right: thin solid gray;
+}
+
 .mission {
   display: flex;
   border: thin solid gray;
   border-top: none;
 }
-.mission:nth-child(odd) {
+.mission:nth-child(even) {
   background: lightgray;
 }
 .mission h3 {
@@ -163,9 +168,7 @@ a {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
+  height: auto;
 }
 .mission > div button {
   font-size: 16px;
@@ -173,13 +176,11 @@ a {
   background: none;
   border: thin solid;
   cursor: pointer;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
+  height: auto;
 }
 
 .activemember {
-  background: var(--monte-blue);
+  background: darkcyan;
 }
 
 .unactive {
@@ -189,10 +190,4 @@ a {
 .activemission {
   color: darkred;
   border-color: darkred;
-}
-
-.common, .mission h3, .mission p, .mission > div {
-  padding: 5px 8px;
-  border: none;
-  border-right: thin solid gray;
 }/*# sourceMappingURL=app.css.map */
