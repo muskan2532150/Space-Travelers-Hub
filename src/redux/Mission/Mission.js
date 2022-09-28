@@ -18,12 +18,16 @@ export const MissionSlice = createSlice({
   reducers: {
     getdata: (state, action) => { state.data = action.payload; },
     setStatus: (state, action) => { state.status = action.payload; },
-    missionChange: (state, action) => { state.data = state.data.map((mission) => { if (mission.mission_id !== action.payload) return mission; return { ...mission, mission: !mission.mission }; }); },
+    missionChange: (state, action) => {
+      state.data = state.data.map((mission) => {
+        if (mission.mission_id !== action.payload) return mission;
+        return { ...mission, mission: !mission.mission };
+      });
+    },
   },
 });
 
-export const {
-  getdata, setStatus, missionChange} = MissionSlice.actions;
+export const { getdata, setStatus, missionChange } = MissionSlice.actions;
 
 export default MissionSlice.reducer;
 
