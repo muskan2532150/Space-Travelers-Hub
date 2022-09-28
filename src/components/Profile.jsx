@@ -22,15 +22,29 @@ const Profile = () => {
     </ul>
   );
 
+  const noRocket = (
+    <ul>
+      <li>No Rocket Reseverd</li>
+    </ul>
+  );
+
+  const noMission = (
+    <ul>
+      <li>No Joined Mission </li>
+    </ul>
+  )
+
+console.log(rocketElements.props.children.length,missionElements.props.children.length);
+
   return (
     <div className="profile">
       <div className="profile-missions">
         <h2 className="profile-rocket-missions">My Missions</h2>
-        {missionElements}
+        {rocketElements.props.children.length ? missionElements :noMission }
       </div>
       <div className="profile-rockets">
         <h2 className="profile-rocket-header">My Rockets</h2>
-        {rocketElements}
+        {missionElements.props.children.length ? rocketElements : noRocket}
       </div>
     </div>
   );
