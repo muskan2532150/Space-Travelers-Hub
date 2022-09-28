@@ -6,10 +6,12 @@ import { MissionItem } from "./MissionItem";
 
 const Missions = () => {
 const dispatch =useDispatch();
-const {data} = useSelector((state)=>state.mission);
+const {data,status} = useSelector((state)=>state.mission);
 
 useEffect(() => {
+  if(status==='idle'){
   dispatch(fetchdata());
+  }
 },[]);
 
   return (

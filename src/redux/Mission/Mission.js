@@ -7,6 +7,7 @@ const STATUSES = Object.freeze({
   IDLE: 'idle',
   ERROR: 'error',
   LOADING: 'loading',
+  SUCCESS:'success',
 });
 
 export const MissionSlice = createSlice({
@@ -47,7 +48,7 @@ export function fetchdata() {
         mission: false,
       }));
       dispatch(getdata(array));
-      dispatch(setStatus(STATUSES.IDLE));
+      dispatch(setStatus(STATUSES.SUCCESS));
     } catch (error) {
       dispatch(setStatus(STATUSES.ERROR));
     }
