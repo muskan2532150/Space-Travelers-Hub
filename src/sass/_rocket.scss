@@ -1,14 +1,15 @@
 .rockets-container {
   margin-top: 25px;
-padding-inline: 50px;
+  padding-inline: 50px;
 }
+
 .rocket {
   display: flex;
   margin-bottom: 22px;
+
   img {
     margin-right: 12px;
     height: 165px;
-    width: min(200px, 322px);
     min-width: 200px;
   }
 

@@ -2,8 +2,7 @@ import React from "react";
 import { NavLink, Link } from "react-router-dom";
 import planetImage from "../assets/planet.png";
 
-const NavBar = () => {
-  return (
+const NavBar = () => (
     <header className="header">
       <nav className="nav-bar">
         <Link to="/" className="logo">
@@ -19,6 +18,5 @@ const NavBar = () => {
       </nav>
     </header>
   );
-};
 
 export default NavBar;

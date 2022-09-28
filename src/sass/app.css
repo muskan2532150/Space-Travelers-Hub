@@ -1,1 +1,94 @@
-@import"https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500;600&display=swap";:root{--monte-blue: #0290ff}html{box-sizing:border-box}*,*::after,*::before{margin:0;box-sizing:inherit}body{font-family:"Roboto Slab",serif}a{text-decoration:none;color:#000}.header{padding:16px 30px;border-bottom:thin solid;margin-inline:19px}.header .nav-bar{display:flex;justify-content:space-between;align-items:center}.header .nav-bar .logo{display:flex;align-items:center}.header .nav-bar .logo img{width:60px;margin-right:24px}.header .nav-bar .nav-links{display:flex}.header .nav-bar .nav-links a{display:block;color:#0e34ff}.header .nav-bar .nav-links a:not(:last-of-type){margin-right:16px}.header .nav-bar .nav-links a:last-of-type{border-left:thin solid #000;padding-left:18px}.active{text-decoration:underline}.rockets-container{margin-top:25px;padding-inline:50px}.rocket{display:flex;margin-bottom:22px}.rocket img{margin-right:12px;height:165px;width:200px;min-width:200px}.rocket-reserve{background:var(--monte-blue);color:#fff;font-size:16px;border:none;padding:6px 12px;border-radius:5px;cursor:pointer;margin-top:12px}.rocket .cancel-reservation{font-size:16px;padding:5px 8px;background:none;border:thin solid;cursor:pointer;margin-top:12px}.rocket .reserved-flag{color:#fff;background:#348e8e;border:none;padding:3px 7px;margin-right:9px}/*# sourceMappingURL=app.css.map */
+@import 'https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500;600&display=swap';
+:root {
+  --monte-blue: #0290ff;
+}
+html {
+  box-sizing: border-box;
+}
+*,
+*::after,
+*::before {
+  margin: 0;
+  box-sizing: inherit;
+}
+body {
+  font-family: 'Roboto Slab', serif;
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+.header {
+  padding: 16px 30px;
+  border-bottom: thin solid;
+  margin-inline: 19px;
+}
+.header .nav-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header .nav-bar .logo {
+  display: flex;
+  align-items: center;
+}
+.header .nav-bar .logo img {
+  width: 60px;
+  margin-right: 24px;
+}
+.header .nav-bar .nav-links {
+  display: flex;
+}
+.header .nav-bar .nav-links a {
+  display: block;
+  color: #0e34ff;
+}
+.header .nav-bar .nav-links a:not(:last-of-type) {
+  margin-right: 16px;
+}
+.header .nav-bar .nav-links a:last-of-type {
+  border-left: thin solid #000;
+  padding-left: 18px;
+}
+.active {
+  text-decoration: underline;
+}
+.rockets-container {
+  margin-top: 25px;
+  padding-inline: 50px;
+}
+.rocket {
+  display: flex;
+  margin-bottom: 22px;
+}
+.rocket img {
+  margin-right: 12px;
+  height: 165px;
+  width: 200px;
+  min-width: 200px;
+}
+.rocket-reserve {
+  background: var(--monte-blue);
+  color: #fff;
+  font-size: 16px;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 12px;
+}
+.rocket .cancel-reservation {
+  font-size: 16px;
+  padding: 5px 8px;
+  background: none;
+  border: thin solid;
+  cursor: pointer;
+  margin-top: 12px;
+}
+.rocket .reserved-flag {
+  color: #fff;
+  background: #348e8e;
+  border: none;
+  padding: 3px 7px;
+  margin-right: 9px;
+}
