@@ -14,13 +14,13 @@ const Rocket = (prop) => {
       <div className="rocket-text">
         <h2 className="rocket-name">{name}</h2>
         <p className="rocket-description">
-          {reserved && <button>Reserved</button>}
+          {reserved && <button className="reserved-flag">Reserved</button>}
           {description}
         </p>
 
         {reserved ? (
           <button
-            className="cancel-reservations"
+            className="cancel-reservation"
             onClick={() => {
               dispatch(cancelBooking(id));
             }}>

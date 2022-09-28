@@ -6,7 +6,7 @@ import Rocket from "./Rocket";
 const Rockets = () => {
   const { rockets, status } = useSelector((state) => state.rockets);
   const dispatch = useDispatch();
-  
+
   const rocketElements = rockets.map((rocket) => {
     const { id, rocket_name, description, flickr_images, reserved } = rocket;
     return (
@@ -16,7 +16,7 @@ const Rockets = () => {
         imageUrl={flickr_images[0]}
         key={id}
         id={id}
-        reserved={reserved || null}
+        reserved={reserved}
       />
     );
   });
