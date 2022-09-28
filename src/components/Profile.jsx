@@ -24,8 +24,14 @@ const Profile = () => {
 
   return (
     <div className="profile">
-      <div className="profile-missions">{missionElements}</div>
-      <div className="profile-rockets">{rocketElements}</div>
+      <div className="profile-missions">
+        <h2 className="profile-rocket-missions">My Missions</h2>
+        {missionElements}
+      </div>
+      <div className="profile-rockets">
+        <h2 className="profile-rocket-header">My Rockets</h2>
+        {rocketElements}
+      </div>
     </div>
   );
 };
