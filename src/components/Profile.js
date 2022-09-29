@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { useSelector } from 'react-redux';
 
 const Profile = () => {
@@ -32,19 +32,17 @@ const Profile = () => {
     <ul>
       <li>No Joined Mission </li>
     </ul>
-  )
-
-console.log(rocketElements.props.children.length,missionElements.props.children.length);
+  );
 
   return (
     <div className="profile">
       <div className="profile-missions">
         <h2 className="profile-rocket-missions">My Missions</h2>
-        {rocketElements.props.children.length ? missionElements :noMission }
+        {missionElements.props.children.length ? missionElements : noMission}
       </div>
       <div className="profile-rockets">
         <h2 className="profile-rocket-header">My Rockets</h2>
-        {missionElements.props.children.length ? rocketElements : noRocket}
+        {rocketElements.props.children.length ? rocketElements : noRocket}
       </div>
     </div>
   );

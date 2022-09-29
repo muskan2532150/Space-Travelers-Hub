@@ -18,6 +18,7 @@ A web application for a company that provides commercial and scientific space tr
 - Redux
 - React-Jest
 - Api
+-Create-react-App
 
 ## Project Setup
 
