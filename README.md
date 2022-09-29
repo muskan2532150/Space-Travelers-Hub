@@ -6,7 +6,7 @@ A web application for a company that provides commercial and scientific space tr
 
 # Live Demo
 
-[Live Demo](https://muskan2532150.github.io/Space-Travelers-Hub/rocket)
+[Live Demo](https://muskan2532150.github.io/Space-Travelers-Hub/)
 
 ## Built With
 
