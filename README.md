@@ -34,7 +34,6 @@ git@github.com:muskan2532150/Space-Travelers-Hub.git
 ```bash
 cd Space-Travelers-Hub
 
-npm install
 ```
 
 4. Run ```npm install``` to install all the necessary dependencies including linters
