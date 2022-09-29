@@ -8,14 +8,12 @@ const Rockets = () => {
   const dispatch = useDispatch();
 
   const rocketElements = rockets.map((rocket) => {
-    const {
-      id, rocketName, description, flickrImages, reserved,
-    } = rocket;
+    const { id, description, reserved } = rocket;
     return (
       <Rocket
-        name={rocketName}
+        name={rocket.rocket_name}
         description={description}
-        imageUrl={flickrImages[0]}
+        imageUrl={rocket.flickr_images[0]}
         key={id}
         id={id}
         reserved={reserved}
@@ -27,8 +25,7 @@ const Rockets = () => {
     if (status === 'idle') {
       dispatch(fetchRockets());
     }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
+  });
 
   return <div className="rockets-container">{rocketElements}</div>;
 };
