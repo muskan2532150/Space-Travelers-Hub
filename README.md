@@ -6,7 +6,7 @@ A web application for a company that provides commercial and scientific space tr
 
 # Live Demo
 
-[Live Demo]() coming soon
+[Live Demo](https://muskan2532150.github.io/Space-Travelers-Hub/)
 
 ## Built With
 
@@ -18,7 +18,7 @@ A web application for a company that provides commercial and scientific space tr
 - Redux
 - React-Jest
 - Api
--Create-react-App
+- Create-react-App
 
 ## Project Setup
 
