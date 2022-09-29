@@ -34,8 +34,6 @@ const Profile = () => {
     </ul>
   );
 
-  console.log(rocketElements.props.children.length, missionElements.props.children.length);
-
   return (
     <div className="profile">
       <div className="profile-missions">
