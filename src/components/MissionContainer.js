@@ -11,6 +11,7 @@ const Missions = () => {
     if (status === 'idle') {
       dispatch(fetchdata());
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (

@@ -67,7 +67,7 @@ Deployed using netlify
 
 ## Authors
 
-#### **Muskan Gupta**
+#### 👤 **Muskan Gupta**
 
 - GitHub: [@github](https://github.com/muskan2532150)
 - Twitter: [@twitter](muskan2532150)
