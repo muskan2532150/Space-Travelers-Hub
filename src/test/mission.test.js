@@ -1,28 +1,28 @@
-import { render,screen } from "@testing-library/react";
+import { render } from "@testing-library/react";
 import Missions from "../components/MissionContainer";
+import { Provider } from "react-redux";
+import  store  from "../redux/Store";
+import MissionItem from "../components/MissionItem";
 
-// const obj = {
-//     mission_name: 'muskan',
-//     mission_id: '1',
-//     description: 'desc',
-//     mission: false,
-// }
-test('renders MissionItem Component', ()=>{
-    render(<Missions/>);
-    const element = screen.getByText('Mission');
-    expect(element).toBeInTheDocument();
-});
+const obj = {
+    mission_name: 'muskan',
+    mission_id: '1',
+    description: 'desc',
+    mission: false,
+}
 
-// import renderer from 'react-test-renderer';
-// import { expect } from 'vitest';
-// import Missions from '../components/MissionContainer';
-
-// test('renders MissionItem Component', () => {
-//   const missions = renderer.create(<Missions />).toJSON();
-//   expect(missions).toMatchSnapshot();
-// });
-
-
-test('adds 1 + 2 to equal 3', () => {
+test('Demo test', () => {
   expect((1+2)).toBe(3);
 });
+
+test('renders MissionItem Component', ()=>{
+  const missionItem = render(<Provider store={store}><MissionItem mission={obj} key={obj.mission_id} /></Provider>);
+    expect(missionItem).toMatchSnapshot();
+});
+
+test('renders Mission Component', () => {
+  const missions = render(<Provider store={store}><Missions /></Provider>);
+  expect(missions).toMatchSnapshot();
+});
+
+
