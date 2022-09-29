@@ -12,17 +12,20 @@ const NavBar = () => (
       <div className="nav-links">
         <NavLink
           to="/rocket"
-          className={({ isActive }) => (isActive ? 'active' : '')}>
+          className={({ isActive }) => (isActive ? 'active' : '')}
+        >
           Rockets
         </NavLink>
         <NavLink
           to="/missions"
-          className={({ isActive }) => (isActive ? 'active' : '')}>
+          className={({ isActive }) => (isActive ? 'active' : '')}
+        >
           Missions
         </NavLink>
         <NavLink
           to="/profile"
-          className={({ isActive }) => (isActive ? 'active' : '')}>
+          className={({ isActive }) => (isActive ? 'active' : '')}
+        >
           My Profile
         </NavLink>
       </div>
