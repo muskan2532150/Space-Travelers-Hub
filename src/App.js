@@ -11,6 +11,7 @@ function App() {
       <BrowserRouter>
         <NavBar />
         <Routes>
+          <Route path="/Space-Travelers-Hub/" element={<Rockets />} />
           <Route path="/rocket" element={<Rockets />} />
           <Route path="/missions" element={<Missions />} />
           <Route path="/profile" element={<Profile />} />
