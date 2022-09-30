@@ -1,0 +1,71 @@
+.common {
+  padding: 5px 8px;
+  border: none;
+  border-right: thin solid gray;
+}
+
+.mission {
+  display: flex;
+  border: thin solid gray;
+  border-top: none;
+
+  &:nth-child(even) {
+    background: lightgray;
+  }
+
+  h3 {
+    width: 20%;
+
+    @extend .common;
+  }
+
+  p {
+    width: 40%;
+
+    @extend .common;
+  }
+
+  >div {
+    width: 20%;
+
+    @extend .common;
+
+    display: flex;
+    align-items: center;
+
+    &:last-child {
+      border-right: none;
+    }
+
+    h3 {
+      color: #fff;
+      border: none;
+      padding: 3px 7px;
+      margin-right: 9px;
+      width: fit-content;
+      height: auto;
+    }
+
+    button {
+      font-size: 16px;
+      padding: 5px 8px;
+      background: none;
+      border: thin solid;
+      cursor: pointer;
+      height: auto;
+    }
+  }
+}
+
+.activemember {
+  background: darkcyan;
+}
+
+.unactive {
+  background: gray;
+}
+
+.activemission {
+  color: darkred;
+  border-color: darkred;
+}

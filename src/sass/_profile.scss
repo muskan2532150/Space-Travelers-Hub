@@ -1,0 +1,25 @@
+.profile {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 58px;
+  padding-inline: 50px;
+  margin-top: 17px;
+
+  h2 {
+    margin-bottom: 14px;
+  }
+
+  li {
+    list-style-type: none;
+    border: var(--thin-border);
+    padding: 10px 16px 24px;
+
+    &:not(:last-of-type) {
+      border-bottom: none;
+    }
+  }
+
+  ul {
+    padding: 0;
+  }
+}

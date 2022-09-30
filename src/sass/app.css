@@ -1,0 +1,216 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500;600&display=swap");
+:root {
+  --monte-blue: #0290ff;
+  --thin-border: thin solid gray;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Roboto Slab", serif;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+.header {
+  padding: 16px 30px;
+  border-bottom: thin solid;
+  margin-inline: 19px;
+}
+.header .nav-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header .nav-bar .logo {
+  display: flex;
+  align-items: center;
+}
+.header .nav-bar .logo img {
+  width: 60px;
+  margin-right: 24px;
+}
+.header .nav-bar .nav-links {
+  display: flex;
+}
+.header .nav-bar .nav-links a {
+  display: block;
+  color: #0e34ff;
+}
+.header .nav-bar .nav-links a:not(:last-of-type) {
+  margin-right: 16px;
+}
+.header .nav-bar .nav-links a:last-of-type {
+  border-left: thin solid black;
+  padding-left: 18px;
+}
+
+.active {
+  text-decoration: underline;
+}
+
+.rockets-container {
+  margin-top: 25px;
+  padding-inline: 50px;
+}
+
+.rocket {
+  display: flex;
+  margin-bottom: 22px;
+}
+.rocket img {
+  margin-right: 12px;
+  height: 165px;
+  min-width: 300px;
+  max-width: 300px;
+}
+.rocket-reserve {
+  background: var(--monte-blue);
+  color: white;
+  font-size: 16px;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 12px;
+}
+.rocket .cancel-reservation {
+  font-size: 16px;
+  padding: 5px 8px;
+  background: none;
+  border: thin solid;
+  cursor: pointer;
+  margin-top: 12px;
+}
+.rocket .reserved-flag {
+  color: white;
+  background: #348e8e;
+  border: none;
+  padding: 3px 7px;
+  margin-right: 9px;
+}
+
+.all-missions {
+  margin: 30px 50px;
+}
+.all-missions .missions-headings {
+  display: flex;
+  border: thin solid gray;
+  box-shadow: 1px 1px 2px #d7d7d7;
+}
+.all-missions .missions-headings h3 {
+  padding: 5px 8px;
+  width: 20%;
+}
+.all-missions .missions-headings h3:not(:last-of-type) {
+  border-right: thin solid gray;
+}
+.all-missions .missions-headings h3:nth-child(2) {
+  width: 40%;
+}
+.all-missions .missions-headings .missions-h3 {
+  grid-area: missions;
+}
+.all-missions .missions-headings .description-h3 {
+  grid-area: description;
+}
+.all-missions .missions-headings .status-h3 {
+  grid-area: status;
+}
+.all-missions .missions-headings .empty-h3 {
+  grid-area: empty;
+}
+
+.common, .mission > div, .mission p, .mission h3 {
+  padding: 5px 8px;
+  border: none;
+  border-right: thin solid gray;
+}
+
+.mission {
+  display: flex;
+  border: thin solid gray;
+  border-top: none;
+}
+.mission:nth-child(even) {
+  background: lightgray;
+}
+.mission h3 {
+  width: 20%;
+}
+.mission p {
+  width: 40%;
+}
+.mission > div {
+  width: 20%;
+  display: flex;
+  align-items: center;
+}
+.mission > div:last-child {
+  border-right: none;
+}
+.mission > div h3 {
+  color: #fff;
+  border: none;
+  padding: 3px 7px;
+  margin-right: 9px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: auto;
+}
+.mission > div button {
+  font-size: 16px;
+  padding: 5px 8px;
+  background: none;
+  border: thin solid;
+  cursor: pointer;
+  height: auto;
+}
+
+.activemember {
+  background: darkcyan;
+}
+
+.unactive {
+  background: gray;
+}
+
+.activemission {
+  color: darkred;
+  border-color: darkred;
+}
+
+.profile {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 58px;
+  padding-inline: 50px;
+  margin-top: 17px;
+}
+.profile h2 {
+  margin-bottom: 14px;
+}
+.profile li {
+  list-style-type: none;
+  border: var(--thin-border);
+  padding: 10px 16px 24px;
+}
+.profile li:not(:last-of-type) {
+  border-bottom: none;
+}
+.profile ul {
+  padding: 0;
+}/*# sourceMappingURL=app.css.map */

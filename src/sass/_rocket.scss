@@ -1,0 +1,44 @@
+.rockets-container {
+  margin-top: 25px;
+  padding-inline: 50px;
+}
+
+.rocket {
+  display: flex;
+  margin-bottom: 22px;
+
+  img {
+    margin-right: 12px;
+    height: 165px;
+    min-width: 300px;
+    max-width: 300px;
+  }
+
+  &-reserve {
+    background: var(--monte-blue);
+    color: white;
+    font-size: 16px;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 12px;
+  }
+
+  .cancel-reservation {
+    font-size: 16px;
+    padding: 5px 8px;
+    background: none;
+    border: thin solid;
+    cursor: pointer;
+    margin-top: 12px;
+  }
+
+  .reserved-flag {
+    color: white;
+    background: #348e8e;
+    border: none;
+    padding: 3px 7px;
+    margin-right: 9px;
+  }
+}
