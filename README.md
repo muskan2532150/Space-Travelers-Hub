@@ -69,9 +69,9 @@ Deployed using netlify
 
 #### 👤 **Muskan Gupta**
 
-- GitHub: [@github](https://github.com/muskan2532150)
-- Twitter: [@twitter](muskan2532150)
-- Linkedin:[Username](https://www.linkedin.com/in/muskan-gupta-869165225/)
+- GitHub: [Muskan Gupta](https://github.com/muskan2532150)
+- Twitter: [Muskan Gupta](muskan2532150)
+- Linkedin:[Muskan Gupta](https://www.linkedin.com/in/muskan-gupta-869165225/)
 
 #### 👤 **Kibirige John**
 
