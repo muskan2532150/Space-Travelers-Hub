@@ -1,77 +1,122 @@
-![](https://img.shields.io/badge/Microverse-blueviolet)
+### User Interface
+ ![Project Image]()
 
-# Space Travelers Hub
+<!-- TABLE OF CONTENTS -->
 
-A web application for a company that provides commercial and scientific space travel services. The application will allow users to book rockets and join selected space missions.
+# 📗 Table of Contents
 
-# Live Demo
+- [📖 About the Project](#about-project)
+  - [🛠 Built With](#built-with)
+    - [Tech Stack](#tech-stack)
+    - [Key Features](#key-features)
+  - [🚀 Live Demo](#live-demo)
+- [💻 Getting Started](#getting-started)
+  - [Setup](#setup)
+  - [Prerequisites](#prerequisites)
+  - [Install](#install)
+  - [Usage](#usage)
+  - [Run Linters](#run-tests)
+- [Screenshot](#screenshot)
+- [👥 Authors](#authors)
+- [🔭 Future Features](#future-features)
+- [🤝 Contribute](#contribute)
+- [⭐️ Show your support](#support)
+- [🙏 Acknowledgements](#acknowledgements)
+- [📝 License](#license)
 
-[Live Demo](https://muskan2532150.github.io/Space-Travelers-Hub/)
+<!-- PROJECT DESCRIPTION -->
 
-## Built With
+# 🧑‍💻  Space Travelers Hub <a name="about-project"></a>
 
-- HTML5
-- CSS3
-- ES6
-- React
-- Vite
-- Redux
-- React-Jest
-- Api
-- Create-react-App
+> ** Space Traveler Hub is an innovative mobile application designed to make space travel more accessible and user friendly than ever before. The app allows users to book flights on a variety of spacecraft, access information on space-related events and activities, and even learn the basics of space travel.**
 
-## Project Setup
+## 🛠 Built With <a name="built-with"></a>
 
-To get a local copy up and running follow these simple example steps.
+### Tech Stack <a name="tech-stack"></a>
+
+
+<details>
+<summary>Technologies</summary>
+  <ul>
+    <li><a href="https://html.com/">HTML</a></li>
+    <li><a href="https://sass-lang.com/">SASS/SCSS</a></li>
+    <li><a href="https://javascript.info/">JavaScript</a></li>
+  </ul>
+</details>
+
+<!-- Features -->
+
+### Key Features <a name="key-features"></a>
+
+> Anyone can see my latest projects that I created and know more about me.
+
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- LIVE DEMO -->
+
+## 🚀 Live Demo <a name="live-demo"></a>
+
+> Link to your deployed project.
+
+- [**See Project 🚀**](https://muskan2532150.github.io/Space-Travelers-Hub/)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- GETTING STARTED -->
+
+## 💻 Getting Started <a name="getting-started"></a>
+
+> In order to start with this project do as follows :
+
+To get a local copy up and running, follow these steps.
 
 ### Prerequisites
 
-- You need to have Code Editor Installed
-- Make sure Nodejs and NPM is installed in your system for linters and libraries
+- Good Knowlege on HTML and CSS (Semantics,Box-Model, Background style and Image Tag, Flexbox, Grid and Media Query)
+ - Install Node.js, Npm Copy the linters from https://github.com/microverseinc/linters-config/tree/master/html-css
+ - Please install the HTML, CSS and Lighthouse linters using Node Package Manager by typing below commands
+   
+   * npm install -g @lhci/cli@0.7.x (For LightHouse linter)
+   * npm install --save-dev hint@7.x
+          [ -f .hintrc ] || wget https://raw.githubusercontent.com/microverseinc/linters-config/master/html-css/.hintrc (For HTML linter)
+   * npm install --save-dev stylelint@13.x stylelint-scss@3.x stylelint-config-standard@21.x stylelint-csstree-validator@1.x
+          [ -f .stylelintrc.json ] || wget https://raw.githubusercontent.com/microverseinc/linters-config/master/html-css/.stylelintrc.json
 
 ### Setup
 
-1. Navigate to the folder where you want this cloned
-2. Clone the repo in your local machine:
+- **use "git clone https://github.com/muskan2532150/Space-Travelers-Hub.git"**
+  - `cd Space-Travelers-Hub`
 
-```bash
-git@github.com:muskan2532150/Space-Travelers-Hub.git
-```
+### Run Linters
 
-3. Open terminal and cd into project and install the dependencies
+I have added the linters or tests in order to avoid anykind of typos and ensure the good practices in this project. So while using this repository if you need to check your work no matters have worked on html, css and js you can use below commands
 
-```bash
-cd Space-Travelers-Hub
+- In order to run the linter test on `index.html` or any html file. Use below command
 
-```
+  `npx hint .`
 
-4. Run `npm install` to install all the necessary dependencies including linters
+- To run linter test on stylesheets. Use below command
 
-5. Open the project using your code editor
+  `npx stylelint "**/*.{css,scss}"`
 
-#### Building and setting up the local server
+- To run linter test on javascript files. Use below command
 
-- run, `npm run start` to start the local server
-- run, `npm run build` to byild the entire project
-- run, `npm test` for seeing all the tests
+  `npx eslint .`
 
-##### For the linters
+**it will automatically correct the errors**
 
-- HTML - run `npx hint .`
-- Javascript and JSX run `npx eslint .`
-- SCSS - run `npx stylelint "**/*.scss"`
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-### Deployment
+<!-- AUTHORS -->
 
-Deployed using netlify
-
-## Authors
+## 👥 Authors <a name="authors"></a>
 
 #### 👤 **Muskan Gupta**
 
-- GitHub: [@github](https://github.com/muskan2532150)
-- Twitter: [@twitter](muskan2532150)
-- Linkedin:[Username](https://www.linkedin.com/in/muskan-gupta-869165225/)
+- GitHub: [Muskan Gupta](https://github.com/muskan2532150)
+- Twitter: [Muskan Gupta](https://twitter.com/muskan2532150)
+- Linkedin: [Muskan Gupta](https://www.linkedin.com/in/muskan-gupt/)
 
 #### 👤 **Kibirige John**
 
@@ -79,18 +124,45 @@ Deployed using netlify
 - Twitter: [kibirigejohn005](https://twitter.com/kibirigejohn005)
 - LinkedIn: [Kibirige John](https://www.linkedin.com/in/kibirigejohn005/)
 
-## 🤝 Contributing
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-Contributions, issues, and feature requests are welcome!
+<!-- FUTURE FEATURES -->
 
-## Show your support
+## 🔭 Future Features <a name="future-features"></a>
 
-Give a ⭐️ if you like this project!
+> In upcoming weeks I will add some features as mentioned below
+
+- [ ] **Add full features like sign-up, sign-in and API**
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- CONTRIBUTING -->
+
+## 🤝 Contribute <a name="contribute"></a>
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- SUPPORT -->
+
+## ⭐️ Show your support <a name="support"></a>
+
+> Write a message to encourage readers to support your project
+
+If you like this project then please give a ⭐️ and also share your feedback using github_issues.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- ACKNOWLEDGEMENTS -->
 
 ## Acknowledgments
-
 - [Space-Travelers-Hub](https://github.com/microverseinc/curriculum-react-redux/blob/main/group-project/project_space_travelers_hub.md)
 
-## 📝 License
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-This project is [MIT](./MIT.md) licensed.
+<!-- LICENSE -->
+
+## 📝 License <a name="license"></a>
+
+This project is [MIT](./LICENSE) licensed.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
