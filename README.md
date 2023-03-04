@@ -1,6 +1,4 @@
 ### User Interface
- ![Project Image]()
-
 <!-- TABLE OF CONTENTS -->
 
 # 📗 Table of Contents
@@ -115,7 +113,6 @@ I have added the linters or tests in order to avoid anykind of typos and ensure 
 #### 👤 **Muskan Gupta**
 
 - GitHub: [Muskan Gupta](https://github.com/muskan2532150)
-
 - Twitter: [Muskan Gupta](https://twitter.com/muskan2532150)
 - Linkedin: [Muskan Gupta](https://www.linkedin.com/in/muskan-gupt/)
 
